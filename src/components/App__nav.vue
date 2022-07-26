@@ -1,10 +1,10 @@
 <template>
     <ul class="menu">
         <nav class="menu-indicator">
-            <li class="menu-item">
+            <li class="menu-item" v-for="link in links" :key="link.id">
                 <a href="#" class="menu-link">
-                    <i class="menu-icon" ><font-awesome-icon icon="fa-regular fa-house" /></i>
-                    <span>Accueil</span>  
+                    <i class="menu-icon" :class="link.icon"></i>
+                    <span>{{link.text}}</span>  
                 </a>
             </li>
 
@@ -26,27 +26,27 @@ export default {
             links: [
                 {
                     id: 1,
-                    icon: "fa-regular fa-house",
+                    icon: "fa-solid fa-house",
                     text: "Accueil",
                 },
                 {
                     id: 2,
-                    icon: "fa-regular fa-badge-check",
+                    icon: "fa-solid fa-circle-check",
                     text: "Présentation",
                 },
                 {
                     id: 3,
-                    icon: "fa-regular fa-child-reaching",
+                    icon: "fa-solid fa-child-reaching",
                     text: "Pilates",
                 },
                 {
                     id: 4,
-                    icon: "fa-regular fa-timer",
+                    icon: "fa-solid fa-calendar-day",
                     text: "Horaires & Tarifs"
                 },
                 {
                     id: 5,
-                    icon: <font-awesome-icon icon="fa-regular fa-address-card" />,
+                    icon: "fa-solid fa-address-card",
                     text: "Contact",
                 },
             ],
@@ -57,7 +57,7 @@ export default {
 
 </script>
 
-<style >
+<style scoped>
 * {
     margin: 0;
     padding: 0;
@@ -68,7 +68,7 @@ export default {
     list-style: none;
 }
 nav {
-    background: rgba(0, 0, 0, 0.3);
+    background: var(--color-primary);
     width: max-content;
     display: block;
     padding: 0.7rem 1.7rem;
@@ -88,7 +88,7 @@ nav a {
     padding: 0.9rem;
     border-radius: 50%;
     display: flex;
-    color: var(--color-light);
+    color: var(--color-text-menu);
     font-size: 1.1rem;
 }
 
@@ -99,5 +99,22 @@ nav a:hover {
 nav a.active {
     background: blue;
     color: green;
+}
+
+a i {
+    margin-right: 0.5rem;
+}
+
+/* ================ TABLETTE ============ */
+@media screen and (max-width: 1024px) {
+
+}
+
+/* ================ PHONE ============ */
+@media screen and (max-width: 600px) {
+span {
+    display: none;
+}
+
 }
 </style>

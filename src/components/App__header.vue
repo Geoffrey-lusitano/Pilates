@@ -18,7 +18,7 @@ export default {
     return {
         typeValue: '',
         typeStatus: false,
-        typeArray: ['Concentration', 'Centrage', 'Respiration', 'Isolation', 'précision', 'Fluidité'],
+        typeArray: ['Concentration', 'Centrage', 'Respiration', 'Isolation', 'Précision', 'Fluidité'],
         typingSpeed: 50,
         erasingSpeed: 50,
         newTextDelay: 2000,
@@ -82,5 +82,35 @@ img {
 h1 {
     font-size:4rem;
     
+}
+.typed__text {
+    color: var(--color-primary);
+    font-weight: 500;
+}
+/* ================ TABLETTE ============ */
+@media screen and (min-width: 1025px) {
+img {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+}
+
+
+/* ================ TABLETTE ============ */
+@media screen and (max-width: 1024px) {
+img {
+
+}
+}
+
+/* ================ PHONE ============ */
+@media screen and (max-width: 600px) {
+.typed__text {
+    font-size: 1rem;
+}
+img {
+
+}
+
 }
 </style>
