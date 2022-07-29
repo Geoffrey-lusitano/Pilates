@@ -4,7 +4,7 @@
             <img src="../assets/logo.png" alt="logo" />
         </div>
         <h1>
-            <span class="typed__text"> {{ typeValue }}</span>
+            <span class="typed__text"> :{{ typeValue }}</span>
         </h1>
 
 
@@ -98,9 +98,7 @@ img {
 
 /* ================ TABLETTE ============ */
 @media screen and (max-width: 1024px) {
-img {
 
-}
 }
 
 /* ================ PHONE ============ */
@@ -108,9 +106,7 @@ img {
 .typed__text {
     font-size: 1rem;
 }
-img {
 
-}
 
 }
 </style>

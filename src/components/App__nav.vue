@@ -1,8 +1,8 @@
 <template>
     <ul class="menu">
         <nav class="menu-indicator">
-            <li class="menu-item" v-for="link in links" :key="link.id">
-                <a href="#" class="menu-link">
+            <li class="menu-item" v-for="link in links" :key="link.id" ref="li" @click="sliderIndicator(link.id)">
+                <a :href="link.href" class="menu-link">
                     <i class="menu-icon" :class="link.icon"></i>
                     <span>{{link.text}}</span>  
                 </a>
@@ -28,30 +28,43 @@ export default {
                     id: 1,
                     icon: "fa-solid fa-house",
                     text: "Accueil",
+                    href: "#"
                 },
                 {
                     id: 2,
                     icon: "fa-solid fa-circle-check",
                     text: "Présentation",
+                    href: "#about"
                 },
                 {
                     id: 3,
                     icon: "fa-solid fa-child-reaching",
                     text: "Pilates",
+                    href: "#pilates"
                 },
                 {
                     id: 4,
                     icon: "fa-solid fa-calendar-day",
-                    text: "Horaires & Tarifs"
+                    text: "Horaires & Tarifs",
+                    href: "#ht"
                 },
                 {
                     id: 5,
                     icon: "fa-solid fa-address-card",
                     text: "Contact",
+                    href: "#contact"
                 },
             ],
         };
     },
+    methods: {
+        sliderIndicator(id) {
+            console.log(id);
+            console.log(this.$refs.li);
+            let el = this.$refs.li.id;
+            console.log(el);
+        }
+    }
 };
 
 
@@ -68,7 +81,7 @@ export default {
     list-style: none;
 }
 nav {
-    background: var(--color-primary);
+    background: rgba(159, 54, 110, 0.7);
     width: max-content;
     display: block;
     padding: 0.7rem 1.7rem;
@@ -85,25 +98,31 @@ nav {
 
 nav a {
     background: transparent;
-    padding: 0.9rem;
-    border-radius: 50%;
+    padding: 0.5rem;
+    border-radius: 5%;
     display: flex;
     color: var(--color-text-menu);
     font-size: 1.1rem;
 }
 
 nav a:hover {
-    background: rgba(0, 0, 0, 0.2);
+    background: var(--color-text-menu);
+    color: var(--color-primary);
 }
 
-nav a.active {
+a.active {
     background: blue;
     color: green;
+}
+a {
+    align-items: center;
 }
 
 a i {
     margin-right: 0.5rem;
+    align-items: center;
 }
+
 
 /* ================ TABLETTE ============ */
 @media screen and (max-width: 1024px) {
@@ -112,9 +131,16 @@ a i {
 
 /* ================ PHONE ============ */
 @media screen and (max-width: 600px) {
+nav a {
+
+    border-radius: 50px;
+}
+
 span {
     display: none;
 }
-
+a i {
+    margin-right: 0;
+}
 }
 </style>

@@ -1,6 +1,9 @@
 <template>
     <div class="container ">
 
+                <p>Le Corps Pilates - Tous droits réservés</p>
+                <p>En cours de construction</p>
+
     </div>
 </template>
 
