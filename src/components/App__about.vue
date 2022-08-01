@@ -63,21 +63,21 @@ export default {
     background: var(--color-primary);
     color: var(--color-text-menu);
     border-radius: 3rem;
-    height: 325px;
+    height: 315px;
     text-align: left;
 }
 .people_gauche h3 {
     margin-top: 1rem;
     margin-bottom: 1rem;
-    margin-left: 1rem;
+    margin-left: 1.5rem;
 }
 .people_gauche h4 {
     margin-top: 1rem;
     margin-bottom: 1rem;
-    margin-left: 1rem;
+    margin-left: 1.5rem;
 }
 .people_gauche ul {
-    margin-left: 1rem;
+    margin-left: 1.5rem;
 }
 /************* *******************/
 img {
