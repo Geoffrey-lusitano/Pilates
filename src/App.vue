@@ -40,8 +40,17 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500&display=swap');
 :root {
   --color-primary: #9F366E;
-  --color-secondady: #C98FAE;
+  --color-secondary: #C98FAE;
   --color-text-menu: #FFFAFA;
+}
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
 #app {
   font-family: "M PLUS Rounded 1c", Arial, sans-serif;

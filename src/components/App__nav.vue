@@ -71,15 +71,6 @@ export default {
 </script>
 
 <style scoped>
-* {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-}
 nav {
     background: rgba(159, 54, 110, 0.7);
     width: max-content;
