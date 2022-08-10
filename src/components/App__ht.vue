@@ -12,18 +12,19 @@
                         <li>Mercredi 10h-11h</li>
                         <br>
                         <li>135 rue Antoine Jérome Balard 34830 Grabels </li>
-                        <a class="img_box" href="../assets/grabels.jpg"><img src="../assets/grabels.jpg" alt="Tropic Land"></a>
+                        <a class="img_box" ><img src="../assets/grabels.jpg" alt="Tropic Land"></a>
                     </ul>
                 </li>
                 <li class="horaires_lieu">
                     <h4>Montferriez-sur-Les</h4>
                     <ul>
+                        <li>Mercredi 18h-19h</li>
                         <li>Jeudi 18h-19h</li>
                         <li>Vendredi 18h30-19h30</li>
                         <br>
                         <li>6B pôle d'activités Sainte Julie 34980 Montferriez-sur-Les</li>
                         <br>
-                        <a class="img_box" href="../assets/sauvielle.jpeg"><img src="../assets/sauvielle.jpeg" alt="Culture et Convivialité à Montferriez"></a>
+                        <a class="img_box" ><img src="../assets/sauvielle.jpeg" alt="Culture et Convivialité à Montferriez"></a>
                     </ul>
                 </li>
                 <li class="horaires_lieu">
@@ -34,7 +35,7 @@
                         <li>8 Avenue des Baronnes 34730 Prades-Le-Lez</li>
                         <br>
                         <br>
-                        <a class="img_box" href="../assets/Atelier.jpg"><img src="../assets/Atelier.jpg" alt="L'Atelier du bien- être"></a>
+                        <a class="img_box" ><img src="../assets/Atelier.jpg" alt="L'Atelier du bien- être"></a>
                     </ul>
                 </li>
             </ul>
@@ -43,10 +44,10 @@
             <h3>Tarifs</h3>
             <ul>
                 <li>Cours à l'unité 15 €</li>
-                <li>Carte de 10 cours 120 €</li>
-                <li>A l'année 1 cour/semaine 390 €</li>
-                <li>A l'année 2 cours/semaine 570 €</li>
-                <li>Cours individuel à Domicile 30 €</li>
+                <li>Carte de 10 cours 125 €</li>
+                <li>A l'année 1 cour/semaine 400 €</li>
+                <li>A l'année 2 cours/semaine 590 €</li>
+                <li>Cours individuel à Domicile 35 €</li>
             </ul>
         </div>
     </section>
