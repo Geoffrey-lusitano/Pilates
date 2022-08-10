@@ -10,6 +10,7 @@
                         <li>Mardi 10-11h</li>
                         <li>Mardi 18h-19h</li>
                         <li>Mercredi 10h-11h</li>
+                        <br>
                         <li>135 rue Antoine Jérome Balard 34830 Grabels </li>
                         <a class="img_box" href="../assets/grabels.jpg"><img src="../assets/grabels.jpg" alt="Tropic Land"></a>
                     </ul>
@@ -19,6 +20,7 @@
                     <ul>
                         <li>Jeudi 18h-19h</li>
                         <li>Vendredi 18h30-19h30</li>
+                        <br>
                         <li>6B pôle d'activités Sainte Julie 34980 Montferriez-sur-Les</li>
                         <br>
                         <a class="img_box" href="../assets/sauvielle.jpeg"><img src="../assets/sauvielle.jpeg" alt="Culture et Convivialité à Montferriez"></a>
@@ -28,13 +30,14 @@
                     <h4>Prades-Le-Lez</h4>
                     <ul>
                         <li>Lundi 18h-19h</li>
+                        <br>
                         <li>8 Avenue des Baronnes 34730 Prades-Le-Lez</li>
+                        <br>
                         <br>
                         <a class="img_box" href="../assets/Atelier.jpg"><img src="../assets/Atelier.jpg" alt="L'Atelier du bien- être"></a>
                     </ul>
                 </li>
             </ul>
-
         </div>
         <div class="tarifs">
             <h3>Tarifs</h3>
@@ -66,6 +69,7 @@ export default {
 .horaires {
     background: var(--color-secondary);
     border-radius: 3rem;
+    padding-bottom: 2rem;
 }
 .horaires h3 {
     padding-top: 2rem;
@@ -77,14 +81,14 @@ export default {
     gap: 1.5rem;
     margin: 1rem 1rem 0 1rem;
 }
-.horaires_lieu {
-
-
+.horaires h4 {
+    padding-bottom: 1rem;
 }
 .img_box {
-    
+    border-radius: 3rem;
 }
 img {
+    border-radius: 3rem;
     margin-top: 2rem;
     max-width:100%;
     object-fit: fill;
