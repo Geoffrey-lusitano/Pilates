@@ -62,12 +62,13 @@ export default {
 .people_gauche {
     background: var(--color-primary);
     color: var(--color-text-menu);
-    border-radius: 3rem;
-    height: 315px;
+    border-radius: 0 3rem 0 3rem ;
+    height: min-content;
     text-align: left;
+box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
 }
 .people_gauche h3 {
-    margin-top: 1rem;
+    margin-top: 2rem;
     margin-bottom: 1rem;
     margin-left: 1.5rem;
 }
@@ -77,21 +78,22 @@ export default {
     margin-left: 1.5rem;
 }
 .people_gauche ul {
-    margin-left: 1.5rem;
+    margin: 1.5rem;
 }
 /************* *******************/
 img {
     max-width: 100%;
     border-radius: 3rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
 }
 /********** **************/
 .people_droite {
     background: var(--color-secondary);
     color: var(--color-text-menu);
-    border-radius: 3rem;
-    height: 400px;
+    border-radius: 3rem 0 3rem 0;
+    height: min-content;
     text-align: left;
-    margin-top: 380px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
 }
 .people_droite p {
     margin: 1.5rem;
@@ -102,11 +104,21 @@ img {
 #about {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 0rem;
     margin: 1rem;
+}
+.people_gauche {
+    border-radius: 3rem 3rem 0 0;
+}
+img {
+    border-radius: 0;
+    margin-top: 0;
+    margin-bottom: -1rem;
 }
 .people_droite {
     margin-top: 0;
+    border-radius: 0 0 3rem 3rem;
+    height: 100%;
 }
 }
 

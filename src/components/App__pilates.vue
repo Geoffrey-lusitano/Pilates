@@ -63,29 +63,46 @@
                 </ul>
             </div>
         </div>
-        <div class="bulle_img">
-            <img src="../assets/carousel1.jpg" alt="">
 
-        </div>
+            <App__carousel class="carousel" v-slot="{currentSlide}">
+                <App__slide v-for="(slide, index) in carouselSlides" :key="index">
+                    <div v-show="currentSlide === index + 1" class="slide_info">
+                        <img :src="require(`../assets/${slide}.jpg`)" alt="">
+                    </div>
+                </App__slide>
+            </App__carousel>
+
+
     </section>
 </template>
 
 <script>
+import App__slide from '../components/App__slide.vue';
+import App__carousel from '../components/App__carousel.vue';
 export default {
     name: 'App__pilates',
+    components: {
+        App__carousel,
+        App__slide,
+    },
+    setup() {
+    const carouselSlides = ['carousel1', 'carousel2', 'carousel3', 'carousel4', 'carousel5', 'carousel6'];
+
+    return { carouselSlides };
+  }
+    
 
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style language="scss" scoped>
 #pilates {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.5rem;
     margin: 1rem;
     color: var(--color-text-menu);
-    border: 1px solid var(--color-primary);
     border-radius: 3.1rem;
 }
 
@@ -94,6 +111,7 @@ export default {
     background: var(--color-primary);
     border-radius: 3rem;
     text-align: left;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
 }
 .bulle_one h3 {
     margin: 2rem;
@@ -111,6 +129,7 @@ export default {
 .bulle_content {
     background: var(--color-secondary);
     border-radius: 3rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
 }
 .bulle_content h3 {
     margin: 2rem;
@@ -120,18 +139,26 @@ export default {
     text-align: left;
 }
 /* ==========  ========== */
-.bulle_img {
 
+.carousel {
+    position: relative;
+    max-height: 50vh;
+    height: 50vh;
+    
+}
+.slide_info {
+    position: absolute;
+    width: 100%;
+    max-height: 100%;
+    height: 100%;
 }
 img {
-    width: 100%;
-    max-height: 700px;
-    border-radius: 3rem;
-    margin: 0 auto;
-    margin-bottom: -1rem;
+    min-width: 100%;
+    height: 100%;
     object-fit: cover;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    border-radius: 3rem;
 }
-
 /* ================ TABLETTE ============ */
 @media screen and (max-width: 1024px) {
 .bulle {
@@ -146,6 +173,24 @@ img {
 
 /* ================ PHONE ============ */
 @media screen and (max-width: 600px) {
-
+.carousel {
+    position: relative;
+    max-height: 25vh;
+    height: 25vh;
+    
+}
+.slide_info {
+    position: absolute;
+    width: 100%;
+    max-height: 100%;
+    height: 100%;
+}
+img {
+    min-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    border-radius: 3rem;
+}
 }
 </style>

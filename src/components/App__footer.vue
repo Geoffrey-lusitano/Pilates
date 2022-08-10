@@ -1,10 +1,8 @@
 <template>
-    <div class="container ">
-
-                <p>Le Corps Pilates - Tous droits réservés</p>
-                <p>En cours de construction</p>
-
-    </div>
+  <footer>
+    <p>Le Corps Pilates - Tous droits réservés</p>
+    <p>En cours de construction</p>
+  </footer>
 </template>
 
 <script>
@@ -18,5 +16,12 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
+footer {
+  background: var(--color-primary);
+  color: var(--color-text-menu);
+  padding-top: 5rem;
+  padding-bottom: 8rem;
+  border-radius: 3rem 3rem 0 0;
+  margin: 1rem;
+}
 </style>

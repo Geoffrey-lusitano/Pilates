@@ -4,7 +4,7 @@
             <img src="../assets/logo.png" alt="logo" />
         </div>
         <h1>
-            <span class="typed__text"> :{{ typeValue }}</span>
+            <span class="typed__text"> {{ typeValue }}</span>
         </h1>
 
 
@@ -12,14 +12,18 @@
 </template>
 
 <script>
+
 export default {
   name: 'App__header',
+  components: {
+    
+  },
   data: () => {
     return {
         typeValue: '',
         typeStatus: false,
         typeArray: ['Concentration', 'Centrage', 'Respiration', 'Isolation', 'Précision', 'Fluidité'],
-        typingSpeed: 50,
+        typingSpeed: 60,
         erasingSpeed: 50,
         newTextDelay: 2000,
         typeArrayIndex: 0,
@@ -69,8 +73,12 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: var(--container-width-lg);
     margin: 0 auto;
+    margin-bottom: 5rem;
 }
 
 img {
@@ -81,9 +89,13 @@ img {
 
 h1 {
     font-size:4rem;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .typed__text {
+
+    position: absolute;
     color: var(--color-primary);
     font-weight: 500;
 }
@@ -104,7 +116,7 @@ img {
 /* ================ PHONE ============ */
 @media screen and (max-width: 600px) {
 .typed__text {
-    font-size: 1rem;
+    font-size: 2rem;
 }
 
 

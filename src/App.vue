@@ -3,7 +3,10 @@
     <App__header/>
     <App__nav/>
     <App__about/>
-    <App__pilates/>
+    <App__pilates> 
+    
+    </App__pilates>
+    
     <App__ht/>
     <App__contact/>
     <App__footer/>
@@ -11,7 +14,6 @@
 </template>
 
 <script>
-//import HelloWorld from './components/HelloWorld.vue'
 
 import App__header from './components/App__header.vue';
 import App__nav from './components/App__nav.vue';
@@ -32,7 +34,8 @@ export default {
     App__ht,
     App__contact,
     App__footer
-}
+  },
+
 }
 </script>
 
@@ -58,5 +61,13 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   margin-top: 60px;
+}
+
+@media screen and (min-width: 1600px) {
+  #app {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+  
 }
 </style>
