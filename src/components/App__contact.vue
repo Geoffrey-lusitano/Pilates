@@ -4,7 +4,7 @@
             <h3>Contact</h3>
             <div class="coord_2">
                 <div class="i1">
-                    <i class="fa-solid fa-phone"> 06.72.77.51.42</i>
+                    <i class="fa-solid fa-phone"> 06 72 77 51 42</i>
                 </div>
                 <div class="i2">
                     <i class="fa-solid fa-envelope-circle-check"> lecorpspilates@outlook.fr</i>

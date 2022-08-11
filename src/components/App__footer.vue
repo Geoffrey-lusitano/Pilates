@@ -1,7 +1,6 @@
 <template>
   <footer>
-    <p>Le Corps Pilates - Tous droits réservés</p>
-    <p>En cours de construction</p>
+    <p>©Le Corps Pilates - Tous droits réservés</p>
   </footer>
 </template>
 
