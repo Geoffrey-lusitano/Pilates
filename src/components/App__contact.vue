@@ -19,7 +19,7 @@
                 Tropic Land 135 Rue Antoine Jérôme Balard 34790 Grabels
             </p>
             <p>
-                Culture & Convivialité 6B pôle d'activités Sainte Julie 34980 Montferriez-sur-Les
+                Culture & Convivialité 6B pôle d'activités Sainte Julie 34980 Montferrier-sur-Lez
             </p>
             <p>
                 L'Atelier du bien- être 8 Avenue des Baronnes 34730 Prades-Le-Lez
@@ -41,7 +41,7 @@ export default {
     grid-template-columns: 1fr;
     gap: 1.5rem;
     margin: 1rem;
-    color: var(--color-text-menu);
+    color: var(--color-text-sombre);
     border-radius: 3.1rem;
     background: var(--color-secondary);
     padding: 1rem;

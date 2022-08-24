@@ -2,7 +2,7 @@
     <ul class="menu">
         <nav class="menu-indicator">
             <li class="menu-item" v-for="link in links" :key="link.id" ref="li" @click="sliderIndicator(link.id)">
-                <a :href="link.href" class="menu-link">
+                <a :href="link.href" class="menu-link" name="link.text">
                     <i class="menu-icon" :class="link.icon"></i>
                     <span>{{link.text}}</span>  
                 </a>

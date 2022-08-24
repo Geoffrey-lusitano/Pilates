@@ -46,6 +46,7 @@ export default {
   --color-secondary: #D0B2A0;
   --color-tercary: #C98FAE;
   --color-text-menu: #FFFAFA;
+  --color-text-sombre: black;
 }
 * {
     margin: 0;

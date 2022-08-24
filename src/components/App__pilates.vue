@@ -125,6 +125,7 @@ export default {
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
     margin: 1rem;
+    color: var(--color-text-sombre);
 }
 .bulle_content {
     background: var(--color-secondary);

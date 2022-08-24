@@ -7,9 +7,6 @@
 <script>
 export default {
   name: 'App__footer',
-  props: {
-    msg: String
-  }
 }
 </script>
 

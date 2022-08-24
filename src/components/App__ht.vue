@@ -16,13 +16,13 @@
                     </ul>
                 </li>
                 <li class="horaires_lieu">
-                    <h4>Montferriez-sur-Les</h4>
+                    <h4>Montferrier-sur-Lez</h4>
                     <ul>
                         <li>Mercredi 18h-19h</li>
                         <li>Jeudi 18h-19h</li>
                         <li>Vendredi 18h30-19h30</li>
                         <br>
-                        <li>6B pôle d'activités Sainte Julie 34980 Montferriez-sur-Les</li>
+                        <li>6B pôle d'activités Sainte Julie 34980 Montferrier-sur-Lez</li>
                         <br>
                         <a class="img_box" ><img src="../assets/sauvielle.jpeg" alt="Culture et Convivialité à Montferriez"></a>
                     </ul>
@@ -71,6 +71,7 @@ export default {
     background: var(--color-secondary);
     border-radius: 3rem;
     padding-bottom: 2rem;
+    color: var(--color-text-sombre);
 }
 .horaires h3 {
     padding-top: 2rem;

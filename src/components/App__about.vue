@@ -2,10 +2,18 @@
     <section id="about">
         <!-- <h2>Présentation</h2> -->
         <div class="people_gauche">
-            <h3>Professeur</h3>
-            <h4>Marie Noëlle Dumortier</h4>
+            <h2>Professeur</h2>
+            <h3>Marie Noëlle Dumortier</h3>
             <ul>
                 <li>Certifiée Pilates depuis 2017</li>
+                <br>
+                <li>Matwork I. II. III</li>
+                <br>
+                <li>Adaptation :</li>
+                <li>- Femme enceinte</li>
+                <li>- Sénior</li>
+                <li>- Rose Pilates</li>
+                <li>- Post-thérapie</li>
                 <br>
                 <li>Brevet d'État Sportif</li>
                 <br>
@@ -37,7 +45,7 @@
                 une activité qui respecte l'anatomie et la physiologie du corps.
             </p>
             <p>
-                Aujourd'hui, j'enseigne cette technique à Grabels et à Prades-Le-Lez.
+                Aujourd'hui, j'enseigne cette technique à Grabels, Prades-Le-Lez, et à Montferrier-sur-lez.
             </p>
         </div>
     </section>
@@ -67,7 +75,7 @@ export default {
     text-align: left;
 box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
 }
-.people_gauche h3 {
+.people_gauche h2,h3 {
     margin-top: 2rem;
     margin-bottom: 1rem;
     margin-left: 1.5rem;
@@ -89,7 +97,7 @@ img {
 /********** **************/
 .people_droite {
     background: var(--color-secondary);
-    color: var(--color-text-menu);
+    color: var(--color-text-sombre);
     border-radius: 3rem 0 3rem 0;
     height: min-content;
     text-align: left;
