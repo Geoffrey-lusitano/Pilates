@@ -3,6 +3,7 @@
         <!-- <h2>Horaires & Tarifs</h2> -->
         <div class="horaires">
             <h3>Horaires</h3>
+            <small>Reprise des cours à partir du lundi 29/08/22</small>
             <ul class="horaires_list">
                 <li class="horaires_lieu">
                     <h4>Grabels</h4>
@@ -45,6 +46,7 @@
             <ul>
                 <li>Cours à l'unité 15 €</li>
                 <li>Carte de 10 cours 125 €</li>
+                <li>(valable 1 an)</li>
                 <li>A l'année 1 cour/semaine 400 €</li>
                 <li>A l'année 2 cours/semaine 590 €</li>
                 <li>Cours individuel à Domicile 35 €</li>
