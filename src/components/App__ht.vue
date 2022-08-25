@@ -45,8 +45,7 @@
             <h3>Tarifs</h3>
             <ul>
                 <li>Cours à l'unité 15 €</li>
-                <li>Carte de 10 cours 125 €</li>
-                <li>(valable 1 an)</li>
+                <li>Carte de 10 cours 125 € <br><small> (valable 1 an)</small></li>
                 <li>A l'année 1 cour/semaine 400 €</li>
                 <li>A l'année 2 cours/semaine 590 €</li>
                 <li>Cours individuel à Domicile 35 €</li>
